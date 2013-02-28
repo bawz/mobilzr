@@ -1,3 +1,4 @@
+/* Mobilzr.js by Jason Silberman - http://aww.io */
 if (typeof window.jQuery === 'undefined') {
 	alert('Please include jquery...');
 } else {
@@ -9,14 +10,14 @@ if (typeof window.jQuery === 'undefined') {
 			if (!(node instanceof jq)) {
 				return false;
 			}
-			this.node = node;
-			this.o = o;
-			this.init();
 			if (typeof cb === 'function') {
 				this.cb = cb;
 			} else if (typeof op === 'function') {
 				this.cb = op;
 			}
+			this.node = node;
+			this.o = o;
+			this.init();
 		};
 
 		Mobilzr.prototype.init = function() {
@@ -86,6 +87,9 @@ if (typeof window.jQuery === 'undefined') {
 					_m.node.addClass(klass);
 					_m.KLASS_USE = klass;
 					jq('body p').text(_m.KLASS_USE);
+					if (typeof _m.cb === 'function') {
+						_m.cb.call(window, k);
+					}
 				}
 			});
 			return _m.KLASS_USE;
