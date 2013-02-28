@@ -28,7 +28,7 @@ There are three arguments that you can pass into the function. Only the first on
 	</script>
 	
 ##Breakpoints
-Breakpoints are how mobilzr determins when to add which class. Breakpoints are simple javascript objects with two properties. Here are the default breakpoints.
+Breakpoints are how mobilzr determins when to add which class. Breakpoints are simple javascript objects with two properties. Here are the default breakpoints. (These work perfect with iPhone and iPad.)
 
 	{'class' : 'desktop', 'width' : '>1200'}
 	{'class' : 'tablet', 'width' : '>760'}
