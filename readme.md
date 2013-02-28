@@ -28,6 +28,9 @@ There are three arguments that you can pass into the function. Only the first on
 	</script>
 	
 ##Breakpoints
+***Warning***: Only *one* breakpoint can be active at one time. Priority is from first to last. So you can't have a height and width breakpoint active at the same time.
+
+
 Breakpoints are how mobilzr determins when to add which class. Breakpoints are simple javascript objects with two properties. Here are the default breakpoints. (These work perfect with iPhone and iPad.)
 
 	{'class' : 'desktop', 'width' : '>1200'}
@@ -38,5 +41,3 @@ You can customize breakpoints in a couple of ways. Here are a few more examples.
 
 	{'class' : 'wierd_phone', 'width' : '=321'}
 	{'class' : 'tall', 'height' : '>1000'}
-	
-***Warning***: Only *one* breakpoint can be active at one time. Priority is from first to last. So you can't have a height and width breakpoint active at the same time.
