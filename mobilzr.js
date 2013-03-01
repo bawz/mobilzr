@@ -86,7 +86,6 @@ if (typeof window.jQuery === 'undefined') {
 					_m.IS_DONE_BREAK = true;
 					_m.node.addClass(klass);
 					_m.KLASS_USE = klass;
-					jq('body p').text(_m.KLASS_USE);
 					if (typeof _m.cb === 'function') {
 						_m.cb.call(window, k);
 					}
