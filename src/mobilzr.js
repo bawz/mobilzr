@@ -1,4 +1,4 @@
-/* Mobilzr.js by Jason Silberman - http://aww.io */
+/* Mobilzr.js by Jason Silberman - http://bawz.is */
 if (typeof window.jQuery === 'undefined') {
 	alert('Please include jquery...');
 } else {
